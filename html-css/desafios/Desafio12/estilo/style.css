@@ -1,20 +1,32 @@
 @charset "UTF-8";
 
+/*
+inicialização
+body
+header (h1, paragrafos, links)
+sections
+footer
+*/
+
+/*importação de fontes  do google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
+/*indicando variavel das fontes usadas*/
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
-
+/*Iniciando as margens e o tamanho das fontes*/
 * {
     margin:  0px;
     padding: 0px;
     font-size: 1em;
 }
-
+/*tamanho min do view port
+background
+fonte em todo body
+*/
 html body {
     min-height: 100vh;
     background-color: darkgrey;
@@ -57,7 +69,7 @@ section {
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
-
+/*. class*/
 section.normal {
     background-color: white;
     color: black;
@@ -78,11 +90,11 @@ section.imagem > p {
     box-shadow: inset 2px 2px 10px 0 black;
     
 }
-
+/*filho da section paragrafos*/
 section > p {
     padding-bottom: 2em;
 }
-
+/*# id nas sections*/
 section#img01 {
     background-image: url('../imagens/background001.jpg');
     background-position: right center;
@@ -93,7 +105,9 @@ section#img02 {
     background-position: right center;
     background-size: cover;
 }
-
+/*CSS do footer
+background, colors, texts, padding
+*/
 footer {
     background-color: black;
     color: white;
