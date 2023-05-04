@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 450px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th  {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(36, 35, 35);
+            color: aliceblue;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            background-color: rgb(123, 129, 136);
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(36, 35, 35);
+        }
+        /*Pseudo classe*/
+        tbody > tr:nth-child(even) 
+        /*even ou 2n*/{
+            background-color: lightgreen;
+        }
+        tbody > tr:nth-child(odd) 
+        /*even ou 2n-1*/{
+            /*Pseudo classe*/
+            background-color: rgb(108, 108, 109);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+                Somente texto
+            T-HEAD
+                TR, TD, TH
+            T-BODY
+                TR, TD, TH
+            T-FOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption><strong>População por estado</strong></caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SP</td>
+                <td class="num">41 262 199</td>
+            </tr> 
+            <tr>
+                <td>MG</td>
+                <td class="num">19 597 330</td>
+            </tr>
+            <tr>
+                <td>RJ</td>
+                <td class="num
+                ">15 989 929</td>
+            </tr>
+            <tr>
+                <td>BA</td>
+                <td>14 016 906</td>
+            </tr>
+            <tr>
+                <td>PR</td>
+                <td>10 444 526</td>
+            </tr>
+            <tr>
+                <td>RG</td>
+                <td>10 693 929</td>
+            </tr>
+            <tr>
+                <td>PE</td>
+                <td>8 796 448</td>
+            </tr>
+            <tr>
+                <td>CE</td>
+                <td>8 452 381</td>
+            </tr>
+            <tr>
+                <td>PA</td>
+                <td>7 581 051</td>
+            </tr>
+            <tr>
+                <td>SC</td>
+                <td>6 248 436</td>
+            </tr>
+            <tr>
+                <td>GO</td>
+                <td>6 003 788</td>
+            </tr>
+
+            <tr>
+                <td>MA</td>
+                <td>6 574 789</td>
+            </tr>
+            <tr>
+                <td>ES</td>
+                <td>3 514 952</td>
+            </tr>
+            <tr>
+                <td>PA</td>
+                <td>3 766 528</td>
+            </tr>
+            <tr>
+                <td>AM</td>
+                <td>3 483 985</td>
+            </tr>
+            <tr>
+                <td>MT</td>
+                <td>3 035 122</td>
+            </tr>
+            <tr>
+                <td>RN</td>
+                <td>3 168 027</td>
+            </tr>
+            <tr>
+                <td>PI</td>
+                <td>3 118 360</td>
+            </tr>
+            <tr>
+                <td>AL</td>
+                <td>3 120 494</td>
+            </tr>
+            <tr>
+                <td>MS</td>
+                <td>2 449 024</td>
+            </tr>
+            <tr>
+                <td>SE</td>
+                <td>2 068 017</td>
+            </tr>
+            <tr>
+                <td>RO</td>
+                <td>1 562 409</td>
+            </tr>
+            <tr>
+                <td>TO</td>
+                <td>1 383 445</td>
+            </tr>
+            <tr>
+                <td>AC</td>
+                <td>733 559</td>
+            </tr>
+            <tr>
+                <td>AP</td>
+                <td>669 526</td>
+            </tr>
+            <tr>
+                <td>RR</td>
+                <td>450 479</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>213 000 000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quae dicta nulla voluptatem similique optio sed molestiae quibusdam in quis nobis sit fugiat iusto dolore, placeat et eligendi impedit. Praesentium!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ratione quis laborum harum, earum doloribus! Reprehenderit dicta dignissimos cumque est sint! Id assumenda, commodi quasi qui nemo illo cum itaque.
+    </p>
+</body>
+</html>
