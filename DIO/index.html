@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Seletor de Tag/Tipo*/
+     h1 {
+        background: darkblue;
+        color: lightgreen;
+     }   
+
+     div {
+        background: lightblue;
+     }
+
+        /*Seletor por ID*/
+    #texto-boas-vindas {
+        background: yellow;
+        color: black;
+    }
+
+    #explicacao-seletores{
+        color: red;
+    }
+
+        /*Seletor por Classe*/
+    .seletores-mais-comuns{
+        color: darkblue;
+        background: lightcoral;
+    }
+    .texto-maiusculo{
+        text-transform: uppercase;
+    }
+        /*Seletor universal*/
+    * {
+        font-weight: bold;
+    }
+    [title]{
+        color: blueviolet;
+    }
+    </style>
+</head>
+<body>
+    <h1>Seletores CSS</h1>
+    <p id="texto-boas-vindas">Bem vindo!</p>
+    <p id="explicacao-seletores">No CSS nós possuimos so seletores por ID</p>
+    <div>
+        <ul>
+            <li><b>Seletor por tipo:</b>Busca elementos por uma tag HTML especifica</li>
+            <li><b>Seletor por ID:</b>Busca elementos através do atributo ID </li>
+            <li class="seletores-mais-comuns"><b>Seletor por Classe:</b>Busca elementos através do atributo class</li>
+            <li><b>Seletor Universal:</b>Seleciona todos os elementos HTML</li>
+            <li><b>Seletor de atributo:</b> </li>
+            <li class="seletores-mais-comuns texto-maiusculo">Classe 1</li>
+            <li class="seletores-mais-comuns texto-maiusculo">Classe 2</li>
+            <li class="texto-maiusculo">Classe 3</li>
+            <li title="titulo">Atributo</li>
+        </ul>
+    </div>
+</body>
+</html>
